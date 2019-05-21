@@ -1,0 +1,26 @@
+{
+    "1": {
+        "username": "Ivaylo",
+        "password": "pass1",
+        "type": "Employee",
+        "period": "N/A"
+    },
+    "2": {
+        "username": "Kiro",
+        "password": "pass2",
+        "type": "Affiliate",
+        "period": "N/A"
+    },
+    "3": {
+        "username": "Nasko",
+        "password": "pass3",
+        "type": "Customer",
+        "period": "3"
+    },
+    "4": {
+        "username": "Nikola",
+        "password": "pass4",
+        "type": "Customer",
+        "period": "1"
+    }
+}
