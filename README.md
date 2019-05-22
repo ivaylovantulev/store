@@ -21,7 +21,7 @@ The end pont is `/discount` which is a POST request and receive the following bo
 }
 ```
 
-Once the server recieve the request, it try to find the user account into the accounts which has to be implemented as a simple database file, sumulated here as a JSON file. According to the gived ID of the user it understand which its Type and calcutate the corresponding discount.
+Once the server recieve the request, it try to find the user account into the accounts which has to be implemented as a simple database file, sumulated here as a JSON file. Currently it contains 4 users, so the `userId` has to be '1', '2', '3' and '4'. According to the gived ID of the user it understand which its Type and calcutate the corresponding discount.
 The Application has the following model:
 
 ![alt text](https://github.com/ivaylovantulev/store/blob/master/model/Model.jpg)
@@ -105,3 +105,5 @@ This will be the result:
 ![alt text](https://github.com/ivaylovantulev/store/blob/master/swagger/result.png)
 
 ## Conclusion
+
+The application was developed to implement the requirements for a simple REST API for calculating discounts. It provide one endpoint with parameters. Changing the parameters it response the discounted prcie. Also a future imlementation with authentication aproach is provided. Unit tests with code coverage and REST Points documentation are also added.
