@@ -29,6 +29,12 @@ Here is the main class diagram:
 
 ![alt text](https://github.com/ivaylovantulev/store/blob/master/model/Main%20Class%20Diagram.jpg)
 
+The `Store Controller` object is an Spring Boot mapping class where is the imlementation of the endpoid mapped to the `discount()` operation.
+This operation loads the corresponding `Responser` object where the logic is separated of the mapping and can be changed any time without changing the mapping and the rest of the future endpoints will still functional as the same way. The `Responser` is designed as a `Bridge` pattern.
+The `Responser` uses `Parser` to find the user account type related to the recieved ID and load the `User Discounter` object which is designed as a `Strategy` pattern. The concrete discounter object is created by the `Factory` (realised as a `Abstract factory` pattern). The hierarhy class diagram of the dicounter object is presented in the following:
+
+![alt text](https://github.com/ivaylovantulev/store/blob/master/model/Discounters%20Class%20Diagram.jpg)
+
 
 ## Build the application
 ## Run tests and generate code coverage report
