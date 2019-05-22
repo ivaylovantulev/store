@@ -35,6 +35,10 @@ The `Responser` uses `Parser` to find the user account type related to the recie
 
 ![alt text](https://github.com/ivaylovantulev/store/blob/master/model/Discounters%20Class%20Diagram.jpg)
 
+One cycle of the calculation of the discount is presented in the following sequence diagram:
+
+![alt text](https://github.com/ivaylovantulev/store/blob/master/model/Sequence%20Diagram.jpg)
+
 
 ## Build the application
 ## Run tests and generate code coverage report
