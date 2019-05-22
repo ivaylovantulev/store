@@ -94,6 +94,6 @@ For documenting the REST endpoints, the Swagger is used. Once the server is runn
 
 This is how the documentation looks like:
 
-![alt text](file::///home/ivantulev/dev/GitHub/Swagger-main.png)
+![alt text](file::./Swagger-main.png)
 
 ## Conclusion
