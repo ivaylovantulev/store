@@ -96,4 +96,12 @@ This is how the documentation looks like:
 
 ![alt text](https://github.com/ivaylovantulev/store/blob/master/swagger/Swagger-main.png)
 
+If you click on the POST and edit a body:
+
+![alt text](https://github.com/ivaylovantulev/store/blob/master/swagger/Test.png)
+
+This will be the result:
+
+![alt text](https://github.com/ivaylovantulev/store/blob/master/swagger/result.png)
+
 ## Conclusion
