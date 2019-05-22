@@ -23,6 +23,13 @@ Once the server recieve the request, it try to find the user account into the ac
 The Application has the following model:
 
 ![alt text](https://github.com/ivaylovantulev/store/blob/master/model/Model.jpg)
+
+This model is implemented in Java. All the packages and the classes are presented into the code of the application.
+Here is the main class diagram:
+
+![alt text](https://github.com/ivaylovantulev/store/blob/master/model/Main%20Class%20Diagram.jpg)
+
+
 ## Build the application
 ## Run tests and generate code coverage report
 ## TBD
