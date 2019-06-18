@@ -5,8 +5,8 @@ import static org.junit.Assert.assertTrue;
 
 import java.util.Optional;
 
-import com.ivantulev.store.discounters.Employee;
-import com.ivantulev.store.discounters.User;
+import com.ivantulev.store.components.discounters.Employee;
+import com.ivantulev.store.components.discounters.User;
 
 import org.junit.Test;
 import org.junit.runner.RunWith;

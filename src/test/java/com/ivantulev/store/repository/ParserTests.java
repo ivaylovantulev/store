@@ -1,8 +1,8 @@
-package com.ivantulev.store.components;
+package com.ivantulev.store.repository;
 
 import static org.junit.Assert.assertEquals;
 
-import com.ivantulev.store.dto.Account;
+import com.ivantulev.store.domain.Account;
 
 import org.junit.Test;
 import org.junit.runner.RunWith;

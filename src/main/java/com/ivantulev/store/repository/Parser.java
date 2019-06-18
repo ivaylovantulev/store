@@ -3,9 +3,10 @@
  * @author Ivaylo Vantulev ivaylo.vantulev@primeholding.com
  */
 
-package com.ivantulev.store.components;
+package com.ivantulev.store.repository;
 
-import com.ivantulev.store.dto.Account;
+import com.ivantulev.store.config.ApplicationProperties;
+import com.ivantulev.store.domain.Account;
 
 import java.io.FileNotFoundException;
 import java.io.FileReader;
@@ -13,6 +14,8 @@ import java.io.IOException;
 import org.json.simple.JSONObject;
 import org.json.simple.parser.JSONParser;
 import org.json.simple.parser.ParseException;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Component;
 
 /**
@@ -25,6 +28,12 @@ public class Parser {
      * Class field
      */
     protected JSONParser parser;
+
+    /**
+     * configuration
+     */
+    @Autowired
+    ApplicationProperties config;
 
     /**
      * Class Constructor
@@ -40,7 +49,7 @@ public class Parser {
      * @return account
      */
     public Account getAccount(String Id) {
-        try (FileReader reader = new FileReader("/home/ivantulev/dev/store/src/main/java/com/ivantulev/store/resources/accounts.json"))
+        try (FileReader reader = new FileReader(this.config.getPath()))
         {
             JSONObject obj = (JSONObject)this.parser.parse(reader);
             JSONObject jsonAccount = (JSONObject)obj.get(Id);

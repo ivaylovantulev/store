@@ -3,16 +3,18 @@
  * @author Ivaylo Vantulev ivaylo.vantulev@primeholding.com
  */
 
-package com.ivantulev.store.responsers;
+package com.ivantulev.store.service;
 
-import com.ivantulev.store.dto.Account;
-import com.ivantulev.store.discounters.User;
-import com.ivantulev.store.components.Parser;
+import com.ivantulev.store.domain.Account;
+import com.ivantulev.store.components.discounters.User;
+import com.ivantulev.store.repository.Parser;
 import com.ivantulev.store.components.Factory;
 
 import java.util.Optional;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.context.annotation.Scope;
 import org.springframework.stereotype.Component;
+
 
 /**
  * Class Responser
@@ -20,6 +22,7 @@ import org.springframework.stereotype.Component;
  * It is mapped to particular REST Endpoint and generate
  * the POST Response
  */
+@Scope("prototype")
 @Component
 public class Responser {
 
@@ -62,10 +65,10 @@ public class Responser {
     }
 
     /**
-     * Get Ammount method - generate the response
+     * Get Response method - generate the response
      * @return string
      */
-    public String getAmmount() {
+    public String getResponse() {
 
         /**
          * Usint the Factory pattern for create an object according to account type

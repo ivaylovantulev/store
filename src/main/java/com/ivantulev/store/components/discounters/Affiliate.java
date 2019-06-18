@@ -3,7 +3,7 @@
  * @author Ivaylo Vantulev ivaylo.vantulev@primeholding.com
  */
 
-package com.ivantulev.store.discounters;
+package com.ivantulev.store.components.discounters;
 
 import org.springframework.stereotype.Component;
 

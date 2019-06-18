@@ -5,7 +5,7 @@
 
 package com.ivantulev.store.components;
 
-import com.ivantulev.store.discounters.User;
+import com.ivantulev.store.components.discounters.User;
 
 import java.lang.reflect.InvocationTargetException;
 import java.util.Optional;
@@ -33,7 +33,7 @@ public class Factory {
             /**
              * Using Class Reflection
              */
-            Class<?> user = Class.forName("com.ivantulev.store.discounters." + userName);
+            Class<?> user = Class.forName("com.ivantulev.store.components.discounters." + userName);
             User object;
             object = (User)user.getConstructor().newInstance();
 

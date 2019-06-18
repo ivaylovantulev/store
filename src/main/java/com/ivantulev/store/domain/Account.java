@@ -3,10 +3,10 @@
  * @author Ivaylo Vantulev ivaylo.vantulev@primeholding.com
  */
 
-package com.ivantulev.store.dto;
+package com.ivantulev.store.domain;
 
 /**
- * Class Account DTO
+ * Class Account Entitiy
  */
 public class Account {
     

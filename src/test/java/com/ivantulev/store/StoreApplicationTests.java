@@ -6,7 +6,7 @@ import java.net.URI;
 import java.net.URISyntaxException;
 
 import com.fasterxml.jackson.core.JsonProcessingException;
-import com.ivantulev.store.dto.Body;
+import com.ivantulev.store.web.rest.Body;
 
 import org.junit.Test;
 import org.junit.runner.RunWith;

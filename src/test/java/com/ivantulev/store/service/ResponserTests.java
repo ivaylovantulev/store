@@ -1,4 +1,4 @@
-package com.ivantulev.store.responsers;
+package com.ivantulev.store.service;
 
 import static org.junit.Assert.assertTrue;
 
@@ -20,7 +20,7 @@ public class ResponserTests {
 		// Responser responser = new Responser();
 		responser.build("1", "Car", 100);
 		assertTrue(responser instanceof Responser);
-		assertTrue("70.0".equals(responser.getAmmount()));
+		assertTrue("70.0".equals(responser.getResponse()));
 	}
 
 }

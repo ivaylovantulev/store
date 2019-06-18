@@ -3,9 +3,9 @@
  * @author Ivaylo Vantulev ivaylo.vantulev@primeholding.com
  */
 
-package com.ivantulev.store.discounters;
+package com.ivantulev.store.components.discounters;
 
-import com.ivantulev.store.dto.Account;
+import com.ivantulev.store.domain.Account;
 
 import org.springframework.stereotype.Component;
 
